@@ -1,6 +1,6 @@
 # DG Web Agency
 
-A modern, responsive website for DG Web Agency — a web design agency that builds free websites for local businesses with monthly subscription plans.
+A modern, responsive website for DG Web Agency — a web design agency that builds websites for local businesses with monthly subscription plans.
 
 ## Live Site
 https://dgwebagency.com
