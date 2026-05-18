@@ -1,39 +1,65 @@
 # DG Web Agency
 
-A modern, responsive website for DG Web Agency — a web design agency that builds websites for local businesses with monthly subscription plans.
+Marketing site for DG Web Agency — a Pasadena-based web design studio building websites for local small businesses.
 
-## Live Site
-https://dgwebagency.com
+**Live site:** https://dgwebagency.com
 
-## Tech Stack
-- HTML5
-- CSS3
-- JavaScript
-- Hosted on Netlify
-- Domain via Godaddy
+## Stack
 
-## Pages
-- `/` — Homepage
-- `/pages/about.html` — About
-- `/pages/terms.html` — Terms of Service
-- `/services/small-business-web-design.html` — Web Design service
-- `/services/local-seo.html` — Local SEO service
-- `/services/website-maintenance.html` — Website Maintenance service
-- `/service-areas.html` — Service Areas
-- `/locations/los-angeles.html` — Los Angeles location page
+Built with static HTML, CSS, and vanilla JavaScript. No framework, no build step, no CMS.
 
-## Features
-- Fully responsive (mobile, tablet, desktop)
-- SEO optimized with JSON-LD structured data
-- Google Search Console and Bing Webmaster Tools verified
-- Automated crawling via Google and Bing (sitemap submitted)
-- Contact form powered by Formspree (domain-locked)
-- Newsletter signup
-- Scroll animations
-- Auto-highlights today's hours
-- Custom 404 page
+This was a deliberate choice. For a marketing site that updates infrequently, static files mean:
+- Sub-second load times (no server processing, no database queries)
+- No security patching of plugins or CMS cores
+- Free hosting on Netlify's CDN
+- Trivial backups and version control
+
+- **Hosting:** Netlify
+- **Domain:** GoDaddy
+- **Forms:** Formspree (domain-locked)
+- **Fonts:** Self-hosted (DM Sans, Playfair) — no external font requests
+
+## Performance
+
+PageSpeed Insights (Google, not local Lighthouse):
+- **Desktop:** Performance 99 / Accessibility 93 / Best Practices 100 / SEO 100
+- **Mobile:** Performance 90 / Accessibility 95 / Best Practices 100 / SEO 100
+
+## SEO
+
+- JSON-LD structured data (Organization, LocalBusiness, ProfessionalService, OfferCatalog)
+- Open Graph and Twitter Card metadata
+- Geo meta tags for local search
+- Sitemap submitted to Google Search Console and Bing Webmaster Tools
+- Location-specific landing pages for programmatic local SEO
+- Keyword research completed before content was written (available on request)
+
+## Project Structure
+
+├── index.html              # Homepage
+├── 404.html                # Custom 404
+├── service-areas.html      # Service area hub
+├── sitemap.xml
+├── robots.txt
+├── assets/img/             # Images
+├── css/styles.css
+├── js/main.js
+├── fonts/                  # Self-hosted .woff2 files
+├── pages/                  # About, Terms
+├── services/               # Service detail pages
+└── locations/              # Location landing pages
+
+## Local Development
+
+No build step required. Open `index.html` directly, or run a local server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
 
 ## Author
+
 David Gutierrez — Pasadena, CA
-- Portfolio: https://davidguti.dev
-- Email: davidguticodes@gmail.com
+[davidguti.dev](https://davidguti.dev) · davidguticodes@gmail.com
