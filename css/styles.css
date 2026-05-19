@@ -53,6 +53,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 200;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 0 0 4px 4px;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 /* NAV */
 nav {
   position: fixed;
@@ -238,7 +256,7 @@ nav {
   animation: fadeUp 1s 0.6s ease both;
 }
 
-/* GET FOUND SECTION - Add this to your styles.css */
+/* GET FOUND SECTION  */
 
 .getfound {
   border-top: 1px solid var(--border);
@@ -298,6 +316,11 @@ nav {
   margin-bottom: 1.5rem;
 }
 
+.getfound-cta {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
 .getfound-card-text {
   color: var(--text);
   font-size: 1.05rem;
@@ -306,11 +329,20 @@ nav {
   font-weight: 300;
 }
 
-/* MOBILE - Add this inside your existing @media (max-width: 768px) block */
-/*
-  .getfound-wrapper { grid-template-columns: 1fr; gap: 2rem; }
-*/
 
+.mb-md { margin-bottom: 1.5rem; }
+.mb-lg { margin-bottom: 2rem; }
+.mt-sm { margin-top: 1rem; }
+.mt-md { margin-top: 3rem; }
+.accent-link { color: var(--accent); }
+.cities-served {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+.cities-served strong {
+  color: var(--text-sec);
+}
 
 .btn {
   padding: 16px 36px;
@@ -578,51 +610,6 @@ section {
   color: var(--text-sec);
 }
 
-.price-referral {
-  margin-top: 1.5rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  font-weight: 300;
-}
-
-.price-terms {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.price-terms a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.7rem;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
-}
-
-.price-terms a:hover {
-  color: var(--text-sec);
-}
-
-.price-alt {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 2rem;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.price-alt a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: opacity 0.3s;
-}
-
-.price-alt a:hover {
-  opacity: 0.7;
-}
 
 .price-cta {
   display: block;
@@ -630,61 +617,6 @@ section {
   margin-top: 1.5rem;
 }
 
-.price-terms-toggle {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.7rem;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-.price-terms-toggle:hover {
-  color: var(--text-sec);
-}
-
-.price-terms-content {
-  display: none;
-  margin-top: 1rem;
-  padding: 1.5rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-}
-
-.price-terms-content.open {
-  display: block;
-}
-
-.price-terms-content p {
-  color: var(--text-sec);
-  font-size: 0.8rem;
-  line-height: 1.7;
-  font-weight: 300;
-  margin-bottom: 0.75rem;
-}
-
-.price-terms-content p:last-child {
-  margin-bottom: 0;
-}
-
-.price-terms-content p strong {
-  color: var(--text);
-  font-weight: 500;
-  font-size: 0.85rem;
-}
-
-.price-comparison {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-top: 2.5rem;
-  font-weight: 300;
-  line-height: 1.6;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* ABOUT PAGE */
 .about-page-hero {
@@ -762,6 +694,10 @@ section {
   line-height: 1.7;
   max-width: 500px;
   margin: 0 auto 2rem;
+}
+
+.about-cta .mt-sm {
+  margin-top: 1.5rem;
 }
 
 /* WORK SAMPLES */
@@ -919,6 +855,10 @@ section {
   text-align: center;
 }
 
+.newsletter-desc {
+  margin: 0 auto;
+}
+
 .newsletter-box {
   max-width: 550px;
   margin: 3rem auto 0;
@@ -1002,6 +942,25 @@ section {
 .newsletter-privacy {
   font-size: 0.75rem;
   color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form-error {
+  color: #e05555;
+  font-size: 0.9rem;
+  text-align: center;
   margin-top: 1rem;
 }
 
@@ -1218,6 +1177,11 @@ footer p {
   margin-top: 3rem;
 }
 
+.error-page {
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
 /* ANIMATIONS */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
@@ -1301,5 +1265,4 @@ footer p {
   .hero-cta-row { flex-direction: column; align-items: center; }
   .cta-banner { padding: 4rem 1.5rem; }
   .footer-links { flex-wrap: wrap; gap: 1rem; }
-  .pricing-grid { grid-template-columns: 1fr; }
 }

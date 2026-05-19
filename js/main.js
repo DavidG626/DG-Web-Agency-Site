@@ -6,7 +6,9 @@ const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navLinks.classList.toggle('open');
-  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  const isOpen = navLinks.classList.contains('open');
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+  hamburger.setAttribute('aria-expanded', isOpen);
 });
 
 navLinks.querySelectorAll('a').forEach(link => {
@@ -41,11 +43,11 @@ if (newsletterForm) newsletterForm.addEventListener('submit', function(e) {
       this.style.display = 'none';
       document.getElementById('newsletterSuccess').style.display = 'block';
     } else {
-      alert('Something went wrong. Please try again.');
+      this.insertAdjacentHTML('afterend', '<p class="form-error">Something went wrong. Please try again.</p>');
     }
   })
   .catch(() => {
-    alert('Something went wrong. Please try again.');
+    this.insertAdjacentHTML('afterend', '<p class="form-error">Something went wrong. Please try again.</p>');
   });
 });
 
@@ -64,10 +66,10 @@ if (contactForm) contactForm.addEventListener('submit', function(e) {
       this.style.display = 'none';
       this.insertAdjacentHTML('afterend', '<p style="color: var(--accent); text-align: center; margin-top: 1rem;">Thanks! I will be in touch shortly.</p>');
     } else {
-      alert('Something went wrong. Please try again.');
+      this.insertAdjacentHTML('afterend', '<p class="form-error">Something went wrong. Please try again.</p>');
     }
   })
   .catch(() => {
-    alert('Something went wrong. Please try again.');
+    this.insertAdjacentHTML('afterend', '<p class="form-error">Something went wrong. Please try again.</p>');
   });
 });

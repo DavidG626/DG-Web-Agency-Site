@@ -32,6 +32,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://dgwebagency.com/#organization",
   "name": "DG Web Agency",
   "alternateName": ["DG Web", "dgwebagency"],
   "url": "https://dgwebagency.com",
@@ -57,12 +58,16 @@
 {
   "@context": "https://schema.org",
   "@type": ["ProfessionalService", "LocalBusiness"],
+  "@id": "https://dgwebagency.com/#localbusiness",
+  "mainEntityOfPage": "https://dgwebagency.com/locations/los-angeles.html",
   "name": "DG Web Agency",
   "alternateName": ["DG Web", "dgwebagency"],
   "url": "https://dgwebagency.com",
   "telephone": "+1-626-344-0793",
   "email": "hello@dgwebagency.com",
+  "image": "https://dgwebagency.com/assets/img/og-image.jpg",
   "description": "Custom websites for small businesses in Los Angeles. Setup starts at $300, Website Care Plans from $59/month. Hosting, SSL, local SEO, and ongoing support all included. One developer, everything handled.",
+  "parentOrganization": { "@id": "https://dgwebagency.com/#organization" },
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Pasadena",
@@ -144,7 +149,6 @@
 "priceRange": "$59-$99/month",
   "paymentAccepted": "Credit Card, Debit Card",
   "openingHours": "Mo-Fr 09:00-18:00",
-  "sameAs": [],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
@@ -152,8 +156,35 @@
   }
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dgwebagency.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Service Areas",
+      "item": "https://dgwebagency.com/service-areas.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Los Angeles"
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <nav>
   <a href="/" class="nav-logo">DG <span>Web Agency</span></a>
@@ -168,14 +199,14 @@
     <li class="nav-mobile-cta"><a href="#contact">Contact Me</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Contact Me</a>
-  <button class="hamburger" aria-label="Open menu">
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span>
     <span></span>
     <span></span>
   </button>
 </nav>
 
-<main>
+<main id="main">
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge"><span></span> Los Angeles, CA</div>
@@ -193,10 +224,10 @@
     <div class="getfound-content">
       <p class="section-label">Why It Matters</p>
       <h2 class="section-title">Your customers are searching.<br>Are they finding you?</h2>
-      <p class="section-desc" style="margin-bottom: 1.5rem;">
+      <p class="section-desc mb-md">
         Most people in Los Angeles Google a business before they call. If you do not show up, they call someone who does.
       </p>
-      <p class="section-desc" style="margin-bottom: 2rem;">
+      <p class="section-desc mb-lg">
         A website changes that.
       </p>
       <div class="getfound-points">
@@ -218,7 +249,7 @@
       <div class="getfound-card-label">Your Site Is Already Started</div>
       <p class="getfound-card-text">I built a draft website for your LA business using your real services, hours, reviews, and photos. It is not a template. It is your business.</p>
       <p class="getfound-card-text">Preview it for free. No commitment, no credit card.</p>
-      <a href="#contact" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Contact Me</a>
+      <a href="#contact" class="btn btn-primary getfound-cta">Contact Me</a>
     </div>
   </div>
 </section>
@@ -331,39 +362,26 @@
       <div class="work-industry">Senior Support Services</div>
       <h3>ThreeRiversServices.com</h3>
       <p>Website for a Pittsburgh-based company helping seniors and their families with document organization, tax preparation, and home support services. Connects older adults with trusted housekeepers, home repair professionals, and more.</p>
-      <a href="https://threeriversservices.com" class="work-link" target="_blank">View Site &rarr;</a>
+      <a href="https://threeriversservices.com" class="work-link" target="_blank" rel="noopener noreferrer">View Site &rarr;</a>
     </div>
     <div class="work-card">
       <div class="work-industry">Composite Materials</div>
       <h3>SonicComposites.com</h3>
       <p>Website for a composite materials company specializing in high-performance solutions. Showcases their products, services, and expertise in advanced composite manufacturing.</p>
-      <a href="https://soniccomposites.com" class="work-link" target="_blank">View Site &rarr;</a>
+      <a href="https://soniccomposites.com" class="work-link" target="_blank" rel="noopener noreferrer">View Site &rarr;</a>
     </div>
     <div class="work-card">
       <div class="work-industry">Professional Nanny</div>
       <h3>AlbaNanny.com</h3>
       <p>Personal website for a professional nanny with 20 years of experience serving the San Gabriel Valley. Features certifications, skills, contact form, and resume download for families looking for trusted childcare.</p>
-      <a href="https://albananny.com/" class="work-link" target="_blank">View Site &rarr;</a>
+      <a href="https://albananny.com/" class="work-link" target="_blank" rel="noopener noreferrer">View Site &rarr;</a>
     </div>
     <div class="work-card">
       <div class="work-industry">SaaS Product</div>
       <h3>MintyEmailTester.com</h3>
       <p>Production SaaS built from scratch for email developers. Handles HTML email QA, CSS inlining, alt tag checking, and rendering tests. Built on Python, Flask, PostgreSQL, and Stripe with 500+ monthly users.</p>
-      <a href="https://mintyemailtester.com" class="work-link" target="_blank">View Site &rarr;</a>
+      <a href="https://mintyemailtester.com" class="work-link" target="_blank" rel="noopener noreferrer">View Site &rarr;</a>
     </div>
-
-    <!-- <div class="work-card">
-      <div class="work-industry">Coming Soon</div>
-      <h3>Your Business Here</h3>
-      <p>We are actively looking for local businesses in the San Gabriel Valley that need a website. If that is you, let us build one for free. You only pay if you love it.</p>
-      <a href="#contact" class="work-link">Get Started &rarr;</a>
-    </div>
-    <div class="work-card">
-      <div class="work-industry">Portfolio</div>
-      <h3>davidguti.dev</h3>
-      <p>Personal developer portfolio showcasing web development projects, technical skills, and professional experience. Clean, modern design with responsive layout.</p>
-      <a href="https://davidguti.dev" class="work-link" target="_blank">View Site &rarr;</a>
-    </div> -->
   </div>
 </section>
 
@@ -373,10 +391,10 @@
     <div>
       <p class="section-label">About</p>
       <h2 class="section-title">One person. No runaround.</h2>
-      <p class="section-desc" style="margin-bottom: 1.5rem;">
+      <p class="section-desc mb-md">
         My name is David Gutierrez. I am a web developer in Pasadena, CA. I build websites for local businesses that want to get more customers online but do not want to deal with the technical side.
       </p>
-      <p class="section-desc" style="margin-bottom: 1.5rem;">
+      <p class="section-desc mb-md">
         You pay a small setup fee and a monthly Website Care Plan. I handle hosting, updates, SEO, and Google. You focus on running your business.
       </p>
       <p class="section-desc">
@@ -434,13 +452,14 @@
 <section class="newsletter fade-in" id="newsletter">
   <p class="section-label">Stay Updated</p>
   <h2 class="section-title">Get more customers online</h2>
-  <p class="section-desc" style="margin: 0 auto;">Simple tips on Google, SEO, and getting your phone to ring more. No spam. Unsubscribe anytime.</p>
+  <p class="section-desc newsletter-desc">Simple tips on Google, SEO, and getting your phone to ring more. No spam. Unsubscribe anytime.</p>
 
   <div class="newsletter-box">
   <h3>Join the newsletter</h3>
   <p>Short, useful emails about getting found online and turning searches into customers. Once or twice a month.</p>
   <form class="newsletter-form" id="newsletterForm" action="https://formspree.io/f/xqegzkbp" method="POST">
     <input type="hidden" name="_subject" value="New Newsletter Signup - DG Web Agency">
+    <label for="emailInput" class="sr-only">Email address</label>
     <input type="email" name="email" id="emailInput" placeholder="your@email.com" class="form-input" required>
     <button type="submit">Subscribe</button>
   </form>
@@ -467,9 +486,12 @@
   <br><br>
   <form action="https://formspree.io/f/xqegzkbp" method="POST" id="contactForm">
     <input type="hidden" name="_subject" value="New Lead - DG Web Agency">
+    <label for="contactName" class="sr-only">Your name</label>
     <input type="text" id="contactName" name="name" placeholder="Your name" class="form-input" required>
+    <label for="contactEmail" class="sr-only">Your email</label>
     <input type="email" id="contactEmail" name="email" placeholder="Your email" class="form-input" required>
-    <input type="text"id="contactBusiness" name="business" placeholder="Business name" class="form-input">
+    <label for="contactBusiness" class="sr-only">Business name</label>
+    <input type="text" id="contactBusiness" name="business" placeholder="Business name" class="form-input">
     <button type="submit" class="btn btn-outline">Get Your Free Website Preview</button>
   </form>
 </div>
