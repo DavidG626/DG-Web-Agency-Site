@@ -22,8 +22,8 @@ This was a deliberate choice. For a marketing site that updates infrequently, st
 ## Performance
 
 PageSpeed Insights (Google, not local Lighthouse):
-- **Desktop:** Performance 99 / Accessibility 93 / Best Practices 100 / SEO 100
-- **Mobile:** Performance 90 / Accessibility 95 / Best Practices 100 / SEO 100
+- **Desktop:** Performance 100 / Accessibility 95 / Best Practices 100 / SEO 100
+- **Mobile:** Performance 100 / Accessibility 95 / Best Practices 100 / SEO 100
 
 ## SEO
 
