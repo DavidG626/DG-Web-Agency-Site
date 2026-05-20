@@ -1,6 +1,6 @@
 # DG Web Agency
 
-Marketing site for DG Web Agency — a Pasadena-based web design studio building websites for local small businesses.
+Marketing site for DG Web Agency, a Pasadena-based web design studio building websites for local small businesses.
 
 **Live site:** https://dgwebagency.com
 
