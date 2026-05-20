@@ -6,22 +6,28 @@ Marketing site for DG Web Agency — a Pasadena-based web design studio building
 
 ## Stack
 
-Built with static HTML, CSS, and vanilla JavaScript. No framework, no build step, no CMS.
+Built with static HTML, CSS, and vanilla JavaScript.
+
+This site is a marketing page for my own agency — content rarely changes and I'm the only editor. 
+Static was the right fit for that. For client sites where editability matters, a CMS is the better tool.
+                                                                            
 
 This was a deliberate choice. For a marketing site that updates infrequently, static files mean:
-- Sub-second load times (no server processing, no database queries)
-- No security patching of plugins or CMS cores
+For this use case, static gave me:
+
+- Sub-second load times
 - Free hosting on Netlify's CDN
-- Trivial backups and version control
+- No ongoing maintenance overhead
 
 - **Hosting:** Netlify
 - **Domain:** GoDaddy
 - **Forms:** Formspree (domain-locked)
-- **Fonts:** Self-hosted (DM Sans, Playfair) — no external font requests
+- **Fonts:** Self-hosted (DM Sans, Playfair)
+- **CSS reset:** Josh Comeau's modern reset
 
 ## Performance
 
-PageSpeed Insights (Google, not local Lighthouse):
+PageSpeed Insights (Lighthouse):
 - **Desktop:** Performance 100 / Accessibility 95 / Best Practices 100 / SEO 100
 - **Mobile:** Performance 100 / Accessibility 95 / Best Practices 100 / SEO 100
 
@@ -49,15 +55,6 @@ PageSpeed Insights (Google, not local Lighthouse):
 ├── services/               # Service detail pages
 └── locations/              # Location landing pages
 
-## Local Development
-
-No build step required. Open `index.html` directly, or run a local server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
 
 ## Author
 
