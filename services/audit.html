@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Free Website Audit for Small Business | DG Web Agency</title>
+<meta name="description" content="Free website audit powered by Google Lighthouse. See your performance, SEO, accessibility, and security scores in 30 seconds. Built for small businesses in Pasadena, Los Angeles, and the San Gabriel Valley.">
+<link rel="canonical" href="https://dgwebagency.com/services/audit.html">
+
+<meta property="og:title" content="Free Website Audit for Small Business | DG Web Agency">
+<meta property="og:description" content="Free website audit powered by Google Lighthouse. See your performance, SEO, accessibility, and security scores in 30 seconds.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dgwebagency.com/services/audit.html">
+<meta property="og:image" content="https://dgwebagency.com/assets/img/og-image.jpg">
+<meta property="og:site_name" content="DG Web Agency">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Website Audit for Small Business | DG Web Agency">
+<meta name="twitter:description" content="Free website audit powered by Google Lighthouse. See how your site scores on performance, SEO, accessibility, and security.">
+
+<meta name="geo.region" content="US-CA">
+<meta name="geo.placename" content="Pasadena">
+<meta name="geo.position" content="34.1478;-118.1445">
+<meta name="ICBM" content="34.1478, -118.1445">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="stylesheet" href="../css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Free Website Audit",
+  "description": "Free website audit powered by Google Lighthouse. See your performance, SEO, accessibility, and security scores in 30 seconds.",
+  "url": "https://dgwebagency.com/services/audit.html",
+  "isPartOf": {
+    "@id": "https://dgwebagency.com/#organization"
+  },
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "DG Web Agency",
+    "url": "https://dgwebagency.com",
+    "telephone": "+1-626-344-0793"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://dgwebagency.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://dgwebagency.com/services/web-design.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Free Website Audit"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav>
+  <a href="/" class="nav-logo">DG <span>Web Agency</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#getfound">Get More Customers</a></li>
+    <li><a href="../index.html#how">How It Works</a></li>
+    <li><a href="web-design.html">Services</a></li>
+    <li><a href="../index.html#pricing">Pricing</a></li>
+    <li><a href="../index.html#work">Work</a></li>
+    <li><a href="../pages/about.html">About</a></li>
+    <li><a href="audit.html">Test My Site</a></li>
+    <li><a href="../index.html#testimonials">Testimonials</a></li>
+    <li class="nav-mobile-cta"><a href="#contact">Contact Me</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Contact Me</a>
+  <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="audit-hero fade-in">
+  <h1>Free Website Score</h1>
+  <p class="hero-sub">Google uses these exact scores to decide where your site ranks. A low score in any category will hurt your SEO, even if the others are perfect. Low scores mean fewer customers find you. Enter your website below and see where you stand in 30 seconds.</p>
+  <form class="audit-form" id="auditForm">
+    <label for="auditUrl" class="sr-only">Website URL</label>
+    <input type="text" id="auditUrl" name="url" placeholder="yourwebsite.com" class="form-input audit-input" required>
+    <button type="submit" class="btn btn-primary audit-btn">Score My Site</button>
+  </form>
+</section>
+
+<!-- AUDIT RESULTS -->
+<section class="audit-results fade-in" id="auditResults" style="display: none;">
+  <p class="section-label">Your Results</p>
+  <h2 class="section-title audit-results-title"></h2>
+
+  <div class="audit-scores-grid">
+    <div class="audit-score-card" id="scorePerformance">
+      <div class="audit-circle" data-score="0">
+        <svg viewBox="0 0 120 120">
+          <circle class="audit-circle-bg" cx="60" cy="60" r="54"></circle>
+          <circle class="audit-circle-ring" cx="60" cy="60" r="54"></circle>
+        </svg>
+        <span class="audit-circle-num">0</span>
+      </div>
+      <h3>Performance</h3>
+      <p>A slow site loses visitors before they ever see what you offer. Google also ranks faster sites higher, so speed directly affects how many people find you.</p>
+    </div>
+    <div class="audit-score-card" id="scoreAccessibility">
+      <div class="audit-circle" data-score="0">
+        <svg viewBox="0 0 120 120">
+          <circle class="audit-circle-bg" cx="60" cy="60" r="54"></circle>
+          <circle class="audit-circle-ring" cx="60" cy="60" r="54"></circle>
+        </svg>
+        <span class="audit-circle-num">0</span>
+      </div>
+      <h3>Accessibility</h3>
+      <p>If people with vision, motor, or hearing differences cannot use your site, you are turning away customers and exposing your business to ADA compliance risk.</p>
+    </div>
+    <div class="audit-score-card" id="scoreBestPractices">
+      <div class="audit-circle" data-score="0">
+        <svg viewBox="0 0 120 120">
+          <circle class="audit-circle-bg" cx="60" cy="60" r="54"></circle>
+          <circle class="audit-circle-ring" cx="60" cy="60" r="54"></circle>
+        </svg>
+        <span class="audit-circle-num">0</span>
+      </div>
+      <h3>Best Practices</h3>
+      <p>Security warnings, outdated code, and missing HTTPS make visitors distrust your site. Browsers may even flag it as unsafe, sending customers straight to a competitor.</p>
+    </div>
+    <div class="audit-score-card" id="scoreSeo">
+      <div class="audit-circle" data-score="0">
+        <svg viewBox="0 0 120 120">
+          <circle class="audit-circle-bg" cx="60" cy="60" r="54"></circle>
+          <circle class="audit-circle-ring" cx="60" cy="60" r="54"></circle>
+        </svg>
+        <span class="audit-circle-num">0</span>
+      </div>
+      <h3>SEO</h3>
+      <p>If Google cannot properly read and index your site, you will not show up when people search for your services. That means every potential customer finds someone else instead.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOADING STATE -->
+<section class="audit-loading fade-in visible" id="auditLoading" style="display: none;">
+  <div class="audit-spinner"></div>
+  <p class="audit-loading-text">Scoring your site...</p>
+  <p class="audit-loading-sub">This usually takes about 30 seconds. Google is scoring your site on a real mobile device.</p>
+</section>
+
+<!-- ERROR STATE -->
+<section class="audit-error fade-in visible" id="auditError" role="alert" style="display: none;">
+  <p class="audit-error-text">Could not scan that site. Double-check the URL and try again.</p>
+  <button class="btn btn-outline audit-retry-btn" id="auditRetry">Try Again</button>
+</section>
+
+<!-- WHAT THIS CHECKS -->
+<section class="about-section fade-in">
+  <p class="section-label">What This Score Measures</p>
+  <h2>The Same Tools Google Uses to Evaluate Your Site</h2>
+  <p>This score runs your website through Google Lighthouse, the same engine Google uses to measure site quality. It scores four categories that directly affect whether customers find you, trust you, and contact you.</p>
+  <div class="terms-content">
+    <div class="terms-item">
+      <h3>Performance</h3>
+      <p>How fast your site loads on a mobile phone. Google has confirmed that page speed is a separate ranking factor, which means even if your SEO score is perfect, a slow site will still show up lower in search results. Slow pages also lose visitors before they ever see what you offer. Every second of load time costs you clicks, calls, and customers.</p>
+    </div>
+    <div class="terms-item">
+      <h3>Accessibility</h3>
+      <p>Whether your site works for people with disabilities, including those using screen readers, keyboard navigation, or assistive devices. Poor accessibility limits your audience and can create legal risk under ADA guidelines.</p>
+    </div>
+    <div class="terms-item">
+      <h3>Best Practices</h3>
+      <p>Technical health checks including HTTPS, secure connections, modern code standards, and correct image formats. Issues here can trigger browser warnings that make your site look unsafe to visitors.</p>
+    </div>
+    <div class="terms-item">
+      <h3>SEO</h3>
+      <p>Whether your site follows the technical requirements Google needs to properly crawl, index, and rank your pages. Missing titles, broken meta tags, and poor structure all hurt your visibility in search results.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner fade-in" id="contact">
+  <h2>Want to hop on a 15-minute call to see how I can improve your site?</h2>
+  <p>Call or text today.</p>
+  <a href="tel:+16263440793" class="cta-phone">(626) 344-0793</a>
+  <br><br>
+  <form action="https://formspree.io/f/xqegzkbp" method="POST" id="contactForm">
+    <input type="hidden" name="_subject" value="New Audit Lead - DG Web Agency">
+    <label for="contactName" class="sr-only">Your name</label>
+    <input type="text" id="contactName" name="name" placeholder="Your name" class="form-input" required>
+    <label for="contactEmail" class="sr-only">Your email</label>
+    <input type="email" id="contactEmail" name="email" placeholder="Your email" class="form-input" required>
+    <label for="contactBusiness" class="sr-only">Business name</label>
+    <input type="text" id="contactBusiness" name="business" placeholder="Business name" class="form-input">
+    <button type="submit" class="btn btn-primary">Get Your Free Website Preview</button>
+  </form>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="audit-disclaimer">
+  <p>Scores are generated using Google PageSpeed Insights and Lighthouse — the same tools Google uses to evaluate websites. Results may vary slightly between scans. DG Web Agency does not control or influence the scoring.</p>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">DG <span>Web Agency</span></div>
+  <div class="footer-links">
+    <a href="../index.html#getfound">Get More Customers</a>
+    <a href="../index.html#how">How It Works</a>
+    <a href="web-design.html">Services</a>
+    <a href="../index.html#pricing">Pricing</a>
+    <a href="../pages/about.html">About</a>
+    <a href="../index.html#testimonials">Testimonials</a>
+  </div>
+  <div class="footer-locations">
+    <p class="footer-locations-label">Serving</p>
+    <a href="../locations/los-angeles.html">Los Angeles</a>
+    <a href="../service-areas.html">All Service Areas</a>
+  </div>
+  <p>Pasadena, CA &middot; hello@dgwebagency.com &middot; (626) 344-0793</p>
+  <br>
+  <p>&copy; 2026 DG Web Agency. All rights reserved.</p>
+  <p class="footer-terms"><a href="../pages/terms.html">Terms &amp; Conditions</a></p>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script>
+const API_KEY = 'AIzaSyA0F8dBgMxy7WJyrsDBj5rhqyF2Ga3qsVY';
+const PSI_URL = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
+
+const auditForm = document.getElementById('auditForm');
+const auditUrlInput = document.getElementById('auditUrl');
+const loadingEl = document.getElementById('auditLoading');
+const errorEl = document.getElementById('auditError');
+const resultsEl = document.getElementById('auditResults');
+const retryBtn = document.getElementById('auditRetry');
+
+function normalizeUrl(raw) {
+  let url = raw.trim();
+  if (!url) return '';
+  if (!/^https?:\/\//i.test(url)) {
+    url = 'https://' + url;
+  }
+  return url;
+}
+
+function getScoreColor(score) {
+  if (score >= 90) return '#0cce6b';
+  if (score >= 50) return '#ffa400';
+  return '#ff4e42';
+}
+
+function setCircle(cardId, score) {
+  const card = document.getElementById(cardId);
+  const circle = card.querySelector('.audit-circle');
+  const ring = card.querySelector('.audit-circle-ring');
+  const num = card.querySelector('.audit-circle-num');
+  const circumference = 2 * Math.PI * 54;
+  const offset = circumference - (score / 100) * circumference;
+  const color = getScoreColor(score);
+
+  circle.setAttribute('data-score', score);
+  ring.style.strokeDasharray = circumference;
+  ring.style.strokeDashoffset = circumference;
+  ring.style.stroke = color;
+  num.textContent = score;
+  num.style.color = color;
+
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+      ring.style.strokeDashoffset = offset;
+    });
+  });
+}
+
+function showState(state) {
+  loadingEl.style.display = 'none';
+  errorEl.style.display = 'none';
+  resultsEl.style.display = 'none';
+  if (state === 'loading') loadingEl.style.display = '';
+  if (state === 'error') errorEl.style.display = '';
+  if (state === 'results') resultsEl.style.display = '';
+}
+
+async function runAudit(url) {
+  showState('loading');
+
+  var queryString = 'url=' + encodeURIComponent(url)
+    + '&strategy=mobile'
+    + '&category=performance'
+    + '&category=accessibility'
+    + '&category=best-practices'
+    + '&category=seo'
+    + '&key=' + encodeURIComponent(API_KEY);
+
+  try {
+    var response = await fetch(PSI_URL + '?' + queryString);
+    if (!response.ok) throw new Error('API error');
+    var data = await response.json();
+
+    if (!data.lighthouseResult || !data.lighthouseResult.categories) {
+      throw new Error('Invalid response');
+    }
+
+    var categories = data.lighthouseResult.categories;
+    var perf = Math.round(categories.performance.score * 100);
+    var a11y = Math.round(categories.accessibility.score * 100);
+    var bp = Math.round(categories['best-practices'].score * 100);
+    var seo = Math.round(categories.seo.score * 100);
+
+    var titleEl = resultsEl.querySelector('.audit-results-title');
+    titleEl.textContent = 'Scores for ' + url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+
+    showState('results');
+    setCircle('scorePerformance', perf);
+    setCircle('scoreAccessibility', a11y);
+    setCircle('scoreBestPractices', bp);
+    setCircle('scoreSeo', seo);
+
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } catch (e) {
+    showState('error');
+  }
+}
+
+auditForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var url = normalizeUrl(auditUrlInput.value);
+  if (!url) return;
+  runAudit(url);
+});
+
+retryBtn.addEventListener('click', function() {
+  showState('');
+  auditUrlInput.focus();
+});
+</script>
+
+</body>
+</html>

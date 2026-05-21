@@ -8,11 +8,9 @@ Marketing site for DG Web Agency, a Pasadena-based web design studio building we
 
 Built with static HTML, CSS, and vanilla JavaScript.
 
-This site is a marketing page for my own agency — content rarely changes and I'm the only editor. 
+This site is a marketing page for my own agency — content rarely changes and I'm the only editor.
 Static was the right fit for that. For client sites where editability matters, a CMS is the better tool.
-                                                                            
 
-This was a deliberate choice. For a marketing site that updates infrequently, static files mean:
 For this use case, static gave me:
 
 - Sub-second load times
@@ -40,6 +38,10 @@ PageSpeed Insights (Lighthouse):
 - Location-specific landing pages for programmatic local SEO
 - Keyword research completed before content was written (available on request)
 
+## Free Website Audit Tool
+
+`services/audit.html` — a client-side audit tool that lets visitors score any website in ~30 seconds. Calls the Google PageSpeed Insights API (which runs Lighthouse under the hood) and displays scores for Performance, Accessibility, Best Practices, and SEO with animated ring charts. No backend required — the API key is scoped and rate-limited by Google.
+
 ## Project Structure
 
 ├── index.html              # Homepage
@@ -52,7 +54,7 @@ PageSpeed Insights (Lighthouse):
 ├── js/main.js
 ├── fonts/                  # Self-hosted .woff2 files
 ├── pages/                  # About, Terms
-├── services/               # Service detail pages
+├── services/               # Service detail pages (web-design, web-maintenance, local-seo, audit)
 └── locations/              # Location landing pages
 
 

@@ -64,7 +64,7 @@ if (contactForm) contactForm.addEventListener('submit', function(e) {
   .then(response => {
     if (response.ok) {
       this.style.display = 'none';
-      this.insertAdjacentHTML('afterend', '<p style="color: var(--accent); text-align: center; margin-top: 1rem;">Thanks! I will be in touch shortly.</p>');
+      this.insertAdjacentHTML('afterend', '<p class="form-success">Thanks! I will be in touch shortly.</p>');
     } else {
       this.insertAdjacentHTML('afterend', '<p class="form-error">Something went wrong. Please try again.</p>');
     }

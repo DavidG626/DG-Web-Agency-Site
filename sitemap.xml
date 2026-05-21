@@ -12,7 +12,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-<url>
+  <url>
     <loc>https://dgwebagency.com/services/web-design.html</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -39,6 +39,12 @@
   <url>
     <loc>https://dgwebagency.com/service-areas.html</loc>
     <lastmod>2026-05-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dgwebagency.com/services/audit.html</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
